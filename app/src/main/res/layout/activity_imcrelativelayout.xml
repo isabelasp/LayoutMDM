@@ -6,73 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".IMCRelativelayout">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/IMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="a" />
+        android:text="Calculo IMC" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/peso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/IMC"
+        android:text="Peso" />
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peso"
+        android:text="Altura" />
+
+    <EditText
+        android:id="@+id/edPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/peso"
+        android:ems="10"
+        android:hint="Peso em kg"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/altura"
+        android:layout_toRightOf="@+id/altura"
+        android:ems="10"
+        android:hint="Altura em Metros"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altura"
         android:layout_centerHorizontal="true"
-        android:text="b" />
+        android:text="IMC" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="c"/>
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="d" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_centerVertical="true"
-
-        android:text="e" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button7"
+        android:layout_below="@+id/result"
         android:layout_centerHorizontal="true"
-        android:text="f" />
+        android:onClick="onCalcularIMC"
+        android:text="Calcular IMC" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:text="g" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button6"
-        android:layout_toRightOf="@+id/button6"
-        android:text="h" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_toEndOf="@+id/button3"
-        android:text="i" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onClicCreditos"
+        android:text="CŔEDITOS" />
 </RelativeLayout>
